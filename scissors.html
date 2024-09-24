@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel y Tijeras</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .content {
+            width: 60%;
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .row {
+            width: 100%;
+            text-align: center;
+        }
+        .choices {
+            display: flex;
+        }
+        .choices div {
+            width: 50%;
+            height: 200px;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="row">
+            <button>Jugar</button>
+        </div>
+        <div class="row choices">
+            <div> 
+                <h2 id="user">usuario</h2>
+                <img src=""  id="imgUser" alt="" width="200px" height="200px">
+            </div>
+            <div>
+                <h2 id="compu">computadora</h2>
+                <img src="" id="imgCompu" alt="" width="200px" height="200px">
+            </div>
+        </div>
+        <div class="row"><h2 id="message">Mensaje</h2></div>
+    </div>
+    <script src="./scissors.js"></script>
+</body>
+</html>
